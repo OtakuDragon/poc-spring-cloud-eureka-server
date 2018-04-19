@@ -1,0 +1,10 @@
+#Default port is 8761
+server:
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false #Não se registrar como cliente no eureka
+    fetchRegistry: false #Não manter um cache de instâncias com o Ribbon
+  server:
+    waitTimeInMsWhenSyncEmpty: 0 #Quantos minutos o eureka deve aguardar para iniciar a responder requisições, em produção é recomendado deixar o padrão de 5 minutos
